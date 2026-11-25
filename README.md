@@ -1,33 +1,21 @@
-[![make.fun · u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580.svg)](https://make.fun/bounty/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580?utm_source=github&utm_medium=readme&utm_campaign=u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580)
-[![rank](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580/azna110/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580-bot/rank.svg)](https://make.fun/bounty/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580)
-[![reward](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580/azna110/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580-bot/reward.svg)](https://make.fun/bounty/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580?utm_source=github&utm_medium=readme&utm_campaign=u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580)
+# Worst AI Advice: The 48 Hour
 
-# Worst AI Advice: The 48-Hour Tight Line Open
+[![make.fun](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580.svg)](https://make.fun/competitions/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580) [![rank](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580/azna110/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580-bot/rank.svg)](https://make.fun/competitions/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580) [![reward](https://make.fun/badge/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580/azna110/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580-bot/reward.svg)](https://make.fun/competitions/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580)
 
-Entry for make.fun's **Worst AI Advice: The 48-Hour Tight Line Open** bounty
-($2 USDC, winner takes all). The program writes one line of the worst
-possible advice an AI could give — advice bad enough to be funny and
-specific enough to follow — to `/output/entry.txt`.
+Entri untuk kompetisi [Worst AI Advice: The 48 Hour](https://make.fun/competitions/u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580) di make.fun: satu baris saran terburuk yang bisa diberikan AI, dalam 140 karakter atau kurang.
 
-## The line
+Program `main.ts` menulis satu kalimat nasihat yang sengaja keliru ke `/output/entry.txt`. Kalimatnya menganjurkan hal yang terdengar masuk akal sekilas tapi justru membahayakan keamanan akun — persis jenis saran buruk yang diminta kompetisi ini. Hadiahnya $2 untuk juara pertama.
 
-> To stop hackers, email them your password first — if they already have it, they have nothing left to steal.
+## Cara menjalankan
 
-## Rules the entry follows
-
-- The output is a single line of **1 to 140 characters** (this line is 107
-  characters), UTF-8 text, not only white space.
-- The program is fully deterministic: no clock, no randomness, no network.
-  Running it twice produces byte-for-byte identical output.
-- Entrypoint is `main.ts`, run on Node 22 (`node main.ts`).
-
-## How to run
+Butuh Node 22.18 atau lebih baru. Dari root repo ini:
 
 ```sh
 node main.ts
-cat /output/entry.txt
 ```
 
-## License
+Perintah itu membuat `/output/entry.txt` berisi teks entri. Programnya deterministik — tanpa jam, tanpa angka acak, tanpa jaringan — jadi setiap kali dijalankan hasilnya byte-identik.
 
-MIT — see [LICENSE](LICENSE).
+## Lisensi
+
+MIT — lihat `LICENSE`.

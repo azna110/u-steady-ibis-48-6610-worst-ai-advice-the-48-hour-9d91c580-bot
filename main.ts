@@ -1,12 +1,18 @@
-// SPDX-License-Identifier: MIT
-// Worst AI Advice — the 48-Hour Tight Line Open.
-// One line of deliberately terrible AI advice, written to /output/entry.txt.
-// Deterministic: no clock, no randomness, no network, no input.
-import { writeFileSync, mkdirSync } from "node:fs";
+// Entri "Worst AI Advice: The 48 Hour" — program kecil yang mencetak satu
+// saran AI yang sengaja buruk ke berkas keluaran. Tanpa jam, tanpa acak,
+// tanpa jaringan: keluarannya selalu sama setiap kali dijalankan.
 
-const ADVICE = `To stop hackers, email them your password first — if they already have it, they have nothing left to steal.`;
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const OUT = "/output/entry.txt";
+const potongan = [
+  "To stop hackers, email them your ",
+  "password first — if they already ",
+  "have it, they have nothing left to steal.",
+];
 
-mkdirSync("/output", { recursive: true });
-writeFileSync(OUT, `${ADVICE}\n`, "utf8");
+const isi = potongan.join("") + "\n";
+const folderKeluaran = "/output";
+const jalurKeluaran = `${folderKeluaran}/entry.txt`;
+
+mkdirSync(folderKeluaran, { recursive: true });
+writeFileSync(jalurKeluaran, isi, "utf8");
