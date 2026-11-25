@@ -2,6 +2,7 @@
 // Worst AI Advice: The 48-Hour Tight Line Open
 // Entry program: writes one line of deliberately terrible AI advice to
 // /output/entry.txt. Deterministic: no clock, no randomness, no network.
+// Entry is 107 characters.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
